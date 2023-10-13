@@ -1,0 +1,176 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    animation: changebg 1 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes changebg{
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: rgb(224, 58, 58);}
+
+}
+.menu {
+    display: inline-block;
+    width: 300px;
+    color: ghostwhite;
+    position:sticky;
+    text-align: center;
+}
+.split {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .top {
+    right: 0;
+    background-color: black;
+  }
+.welcome {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+/* h1 {
+    width: 300px;
+    color: ghostwhite;
+} */
+p {
+    color: whitesmoke;
+}
+em {
+    color: white;
+}
+h3 {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    animation-duration: 3s;
+    animation-name: slideIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+    0% {
+        margin-left: 0%;
+        opacity: 0%;
+
+    }
+    100% {
+        margin-left: 350px;
+    }
+}
+h1 {
+    position: fixed;
+}
+/** {
+    box-sizing: border-box;
+  }
+  h2 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+  }
+  
+  h2 span {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  
+  .message {
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out;
+    animation-fill-mode: always;
+  }
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+  /* Split the screen in half */
+
